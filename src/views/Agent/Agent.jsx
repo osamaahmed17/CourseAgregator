@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
 
 
@@ -18,13 +18,13 @@ class Agent extends Component {
               <div className="row">
                 <div className="input-field col s12">
                   <input id="Email" type="email" className="validate" />
-                  <label for="Email">Please Enter Email</label>
+                  
                 </div>
               </div>
               <div className="row">
                 <div className="input-field col s12">
                   <input id="Query" type="text" className="validate" />
-                  <label for="Query">Please Enter your Query</label>
+                 
                 </div>
                 <div onClick={this.showAlert} className="waves-effect waves-light btn">Submit</div>
               </div>

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-import Collectionitem from 'components/Collectionitem.jsx'
+import Collectionitem from 'components/Collectionitem/Collectionitem.jsx'
 import { Link } from 'react-router-dom';
 
 

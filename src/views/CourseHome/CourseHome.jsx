@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Cards from 'components/cards.jsx'
+﻿import React, { Component } from 'react';
+import Cards from 'components/cards/cards.jsx'
 import axios from 'axios';
 
 class CourseHome extends Component {
