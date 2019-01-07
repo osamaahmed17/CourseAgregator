@@ -7,7 +7,7 @@ class Collectionitem extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      agents: this.props.data.Agent,
+      agents: this.props.data.agentName,
       id: this.props.data.id
 
     }

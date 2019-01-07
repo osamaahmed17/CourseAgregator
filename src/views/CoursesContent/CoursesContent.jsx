@@ -1,7 +1,8 @@
 ﻿import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
 import Collectionitem from 'components/Collectionitem/Collectionitem.jsx'
-import { Link } from 'react-router-dom';
+
+
 
 
 class CoursesContent extends Component {
@@ -12,7 +13,7 @@ class CoursesContent extends Component {
     }
   }
   render() {
-    console.log(this.state.agents)
+    
     return (
       <div className="CoursesContent">
         <Parallax bgImage={require('images/bg.jpg')} >

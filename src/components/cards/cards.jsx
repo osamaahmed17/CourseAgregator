@@ -7,8 +7,8 @@ class Cards extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            userId: this.props.data.userId,
-            title: this.props.data.title,
+            userId: this.props.data.id,
+            title: this.props.data.Title,
             agents: this.props.agents
 
         }
@@ -21,7 +21,7 @@ class Cards extends Component {
                         <div className="card-image">
                             <img src={photo}>
                             </img>
-                            <span className="card-title">{this.state.userId}</span>
+                            <h5>{this.state.title}</h5>
                             <div className="card-action">
                                 <Link to={{ pathname: '/CoursesContent', state: { title: this.state.title, userId: this.state.userId, agents: this.state.agents } }}>Click Me</Link>
                                 <div className="card-content">

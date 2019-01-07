@@ -25,8 +25,6 @@ class Header extends Component {
             <div className="nav-wrapper">
               <div href="#" className="brand-logo center"><img style={Style} src={logo}></img></div>
               <ul id="nav-mobile" className="left hide-on-med-and-down">
-                <li><i className="material-icons left">search </i>    </li>
-                <li><input type="text" placeholder="search" id="autocomplete-input" className="autocomplete" ></input> </li>
                 <li><div href="badges.html"><i className="material-icons left">view_module</i>Menue</div></li>
               </ul>
             </div>

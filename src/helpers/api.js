@@ -18,7 +18,16 @@ class API {
     .catch((error) => console.log(error));
   }
 
-  
+  getCourses=(stateHandler) =>{
+    axiosClient.get("https://launchpad-red.au-syd.mybluemix.net/agregator/api/courses").then((response)=>
+    stateHandler({catalogue: response.data.courses})
+    )
+  }
+  getAgents=(stateHandler) =>{
+    axiosClient.get("https://launchpad-red.au-syd.mybluemix.net/agregator/api/agentprofile").then((response)=>
+    stateHandler({agents: response.data.agents})
+    )
+  }
 
 }
 
