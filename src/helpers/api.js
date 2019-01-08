@@ -20,7 +20,7 @@ class API {
 
   getCourses=(stateHandler) =>{
     axiosClient.get("https://launchpad-red.au-syd.mybluemix.net/agregator/api/courses").then((response)=>
-    stateHandler({catalogue: response.data.courses})
+    stateHandler({catalogue: response.data.courses,filteredCourses:response.data.courses})
     )
   }
   getAgents=(stateHandler) =>{

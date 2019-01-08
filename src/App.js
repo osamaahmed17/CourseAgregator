@@ -54,9 +54,11 @@ class App extends Component {
         <Switch>
           
           <Route exact path='/' render={(props) => (this.props.loggedIn || AppHelper.isUserLocalStorageLoggedIn() ?
-            <Redirect to='/CourseHome' /> : <Login parentState={this.state} parentProps={this.props} /> )}
+            <Redirect to='/home' /> : <Login parentState={this.state} parentProps={this.props} /> )}
           />
-
+          <Route exact path='/home' render={(props) => (this.props.loggedIn || AppHelper.isUserLocalStorageLoggedIn() ? 
+            <Home {...props}/> : <Redirect to='/' /> )} 
+          />
           <Route exact path='/team' render={(props) => (this.props.loggedIn || AppHelper.isUserLocalStorageLoggedIn() ? 
             <Team {...props}/> : <Redirect to='/' /> )} 
           />
