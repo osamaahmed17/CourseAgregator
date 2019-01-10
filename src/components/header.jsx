@@ -13,13 +13,9 @@ class Header extends Component {
   }
   componentDidMount(){
     M.Dropdown.init(this.userdropper,{alignment:"right",constrainWidth: false});
-    M.Sidenav.init(this.Mnavigate,{menuWidth:300,edge:"left"});   
+  
   }
-  logout = (e) => {
-    e.preventDefault();
-    this.props.dispatchLogout()
-    AppHelper.logoutUser()
-  }
+ 
   render() {
     var Style = {
       width: '58px',
@@ -33,9 +29,9 @@ class Header extends Component {
           <nav className="black lighten-2">
             <div className="nav-wrapper">
              <div className="brand-logo center"><img style={Style} src={logo}></img></div>
-          <a href="#!" data-target="slide-out" ref={ (Mnavigate) => {this.Mnavigate = Mnavigate} } className="sidenav-trigger"><i className="material-icons">menu</i></a>
+         
               <ul className="right">
-              <li><a className='dropdown-trigger' ref={ (userdropper) => {this.userdropper = userdropper} } href='#!' data-target='user-dropper'>{window.localStorage.username}<i className="material-icons right">arrow_drop_down</i></a> 
+              <li><a className='dropdown-trigger' ref={ (userdropper) => {this.userdropper = userdropper} } href='#!' data-target='user-dropper'><i className="material-icons right">arrow_drop_down</i></a> 
                 </li>
               </ul>
             </div>

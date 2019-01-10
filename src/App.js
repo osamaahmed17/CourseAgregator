@@ -22,6 +22,7 @@ class App extends Component {
     this.state = {
       title: 'DLP React Boilerplate',
     };
+    this.stateHandler = this.stateHandler.bind(this);
   }
 
   // Used to handle state from children

@@ -20,7 +20,7 @@ class CoursesContent extends Component {
         <div className="CoursesContent">
           <Parallax bgImage={require('images/bg.jpg')} >
             <h2> {this.props.location.state.title}</h2>
-            <p>{this.props.location.state.description}</p>
+            <p align="center">{this.props.location.state.description}</p>
             <div style={{ height: '200px' }} />
             <h5>Available Consultants</h5>
             <div className="container">
